@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:id="@+id/matchRecordRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/fragmentMatchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Untitled Match"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:maxWidth="210dp"/>
+
+            <TextView
+                android:id="@+id/fragmentOpponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opponent: "
+                android:textSize="12sp"
+                android:maxWidth="210dp"/>
+
+            <TextView
+                android:id="@+id/fragmentBeltColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belt color: "
+                android:textSize="12sp"
+                android:maxWidth="210dp"/>
+
+            <TextView
+                android:id="@+id/fragmentTournament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tournament: "
+                android:textSize="12sp"
+                android:maxWidth="210dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragmentResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:gravity="center|top"
+            android:textSize="70sp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
